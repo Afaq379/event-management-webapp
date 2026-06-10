@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon | Interactive Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Event Horizon</h1>
+        <p>Your Gateway to Unforgettable Experiences</p>
+    </header>
+
+    <main class="container">
+        <section class="controls-sidebar">
+            <div class="card-wrapper">
+                <h2>Create New Event</h2>
+                <form id="event-form" novalidate>
+                    <div class="form-group">
+                        <label for="event-name">Event Name</label>
+                        <input type="text" id="event-name" placeholder="e.g., Tech Summit 2026" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date</label>
+                        <input type="date" id="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-desc">Event Description</label>
+                        <textarea id="event-desc" rows="4" placeholder="Describe the event details..." required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn">Add Event</button>
+                    <div id="validation-error" class="error-message"></div>
+                </form>
+            </div>
+
+            <div class="card-wrapper search-box">
+                <h2>Filter Events</h2>
+                <input type="text" id="search-bar" placeholder="Search by name or date (YYYY-MM-DD)...">
+            </div>
+        </section>
+
+        <section class="events-feed">
+            <h2>Upcoming & Past Events</h2>
+            <div id="events-container" class="events-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name | Event Horizon Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
